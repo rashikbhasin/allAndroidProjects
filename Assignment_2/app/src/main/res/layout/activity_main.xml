@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rashikbhasingmail.assignment_2.MainActivity">
+
+   <!--<ImageView-->
+       <!--android:id="@+id/img1"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="280dp"-->
+       <!--android:src="@drawable/image_1"-->
+
+       <!--android:padding="0dp"-->
+       <!--android:background="#FFFFFF"/>-->
+
+     <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            />
+
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/viewPager"
+        >   <!-- make change here of id -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_column="1"
+                android:text="Right Chaise"
+                >
+            </TextView>
+            <!-- android:layout_below="@+id/viewPager"-->
+            <TextView
+                android:id="@+id/text2"
+                android:layout_column="2"
+                android:text="Price: Rs.64999"
+                >
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:columnWidth="90dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/table1"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/grid"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:fillViewport="true">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRODUCT INFO"
+        android:layout_below="@id/horizontal_scroll"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/text3"
+        android:stretchColumns="1,2"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right">
+        <TextView
+            android:text="DIMENSIONS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+        <TextView
+            android:text=":32' H*24'(for each seat)W*24'D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="LEGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+        <TextView
+            android:text=":Solid Wood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="FRAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+        <TextView
+            android:text=":Solid Woods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="SUSPENSION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+        <TextView
+            android:text=":Webbing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="FILLING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+        <TextView
+            android:text=":Premium quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="DELIVERY TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+        <TextView
+            android:text=":Within 3-4 weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            />
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2"
+            android:background="#33FFFC"
+            android:layout_below="@+id/pager"
+            android:layout_marginTop="5dp"
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_column="1"
+                    android:text="Right Chaise"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_column="2"
+                    android:text="Price: Rs.64999"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_below="@+id/table1"
+            android:id="@+id/horz1"
+            android:layout_marginTop="5dp">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_gridtableLayout"
+                    android:layout_width="875dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/grid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:columnWidth="100dp"
+                        android:gravity="center"
+                        android:rowCount="3"
+                        android:horizontalSpacing="1dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="horizontal"
+                        android:stretchMode="none"
+                        android:verticalSpacing="1dp">
+
+                    </GridView>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horz1"
+            android:layout_marginTop="5dp"
+            android:background="#33FFFC"
+            android:id="@+id/horizontal_scroll">
+            <LinearLayout
+                android:id="@+id/imageGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                />
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT INFO"
+            android:layout_below="@id/horizontal_scroll"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/text3"
+            android:stretchColumns="1,2"
+            android:layout_marginTop="5dp"
+            android:background="#33FFFC">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right">
+                <TextView
+                    android:text="DIMENSIONS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text=":32' H*24'(for each seat)W*24'D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/text222"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="LEGS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text=":Solid Wood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="FRAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text=":Solid Woods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="SUSPENSION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text=":Webbing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="FILLING"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text=":Premium quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="DELIVERY TIME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text=":Within 3-4 weeks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/text333"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+</ScrollView>

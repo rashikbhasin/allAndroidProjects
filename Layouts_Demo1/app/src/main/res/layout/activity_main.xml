@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button android:id="@+id/btnPauseService1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="pause_service"/>
+
+    <Button android:id="@+id/btnStartService1"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:text="start_service"/>
+
+    <Button android:id="@+id/btnStopService1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="stop_service"/>
+
+    <Button android:id="@+id/btnStartService2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="start_service"/>
+
+    <Button android:id="@+id/btnPauseService2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="pause_service"/>
+
+    <Button android:id="@+id/btnStopService2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="stop_service"/><Button android:id="@+id/btnStartService"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:text="start_service"/>
+
+    <Button android:id="@+id/btnPauseService3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="pause_service"/>
+
+    <Button android:id="@+id/btnStopService3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="stop_service"/>
+    <Button android:id="@+id/btnStartService3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="start_service"/>
+
+    <Button android:id="@+id/btnPauseService4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="pause_service"/>
+
+    <Button android:id="@+id/btnStopService4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="stop_service"/>
+    <Button android:id="@+id/btnStartService5"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:text="start_service"/>
+
+    <Button android:id="@+id/btnPauseService5"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="pause_service"/>
+
+    <Button android:id="@+id/btnStopService5"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="stop_service"/>
+    <Button android:id="@+id/btnStartService6"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="start_service6"/>
+
+    <Button android:id="@+id/btnPauseService6"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="pause_service6"/>
+
+    <Button android:id="@+id/btnStopService6"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="stop_service6"/>
+</LinearLayout>
